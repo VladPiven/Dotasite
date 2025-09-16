@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Головна</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="block block1">Що я люблю, не дуже та й таке<div class="x">Отаковот</div></div>
+
+  <div class="main-content">
+    <div class="middle-container">
+
+      <div class="block block2">
+        <nav>
+          <ul>
+            <li><a href="index.html">Дота</a></li>
+            <li><a href="page2.html">Лол(Ліг оф легендс)</a></li>
+            <li><a href="page3.html">Паджик:3😜</a></li>
+            <li><a href="page4.html">Інвокер!!!!!!😎</a></li>
+            <li><a href="#" id="secret-btn">Секретна сторінка</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="center-column">
+        <div class="block block3">Не придумав, тому хай буде так, але тут може бути ваша реклама</div>
+        <div class="block block5">
+              <div style="padding: 10px;">
+    <img src="https://png.klev.club/uploads/posts/2024-04/png-klev-club-fcux-p-pudzh-dota-2-png-17.png" alt="Dota 2 Pudzh" style="width: 100%; margin-bottom: 15px;" />
+    <img src="https://www.meme-arsenal.com/memes/d191661f70a23719cd4fb95fbc329518.jpg" alt="PAdzh:3" style="width: 100%; margin-bottom: 15px;" />
+    <img src="https://i.pinimg.com/736x/a9/4c/f5/a94cf541b61bcd310827ab03147c22a6.jpg" alt="Sad padzh:()" style="width: 100%; margin-bottom: 15px;" />
+  </div>
+        </div>
+      </div>
+
+      <div class="block block4">  <h1>Чому замовити рекламу в мене? 🦄</h1>
+  <p>Бо я не просто рекламщик, я <span class="highlight">мемний магістр</span>! 😎</p>
+  <p>Ваша реклама буде такою соковитою, що навіть котики в інтернеті лайкатимуть! 🐾</p>
+  <p>Мої кампанії - це як борщ: усе по рецепту, але з перчинкою креативу! 🌶️</p>
+  <p>Таргетинг? Точно в яблучко! 🎯 Бюджет? Економлю, як бабуся на базарі! 🛒</p>
+  <p>А ще я даю <span class="highlight">100% гарантію вау-ефекту</span> або блокую вас! 😜</p>
+  <p>Звіти? Прозоріші, ніж сльоза єдинорога! 🦄</p>
+  <p>Тож не тягни кота за хвіст - замовляй рекламу в мене, і твій бізнес злетить до зірок! 🚀</p>
+  <button onclick="alert('😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎')">Замовити зараз!</button></div>
+    </div>
+
+    <div class="block block6">Підвал з людьми(тут також може бути ваша реклама)</div>
+  </div>
+
+  <div class="block block7">Тут може бути ваша реклама*<div class="y">Отаковотаквот</div></div>
+
+
+  <video id="secret-video" src="video.mp4" preload="auto"></video>
+<button id="close-video" style="
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 5px;
+  display: none;
+  cursor: pointer;
+">✖</button>
+
+<script>
+  const btn = document.getElementById('secret-btn');
+  const video = document.getElementById('secret-video');
+  const mainContent = document.querySelector('.main-content');
+  const closeBtn = document.getElementById('close-video');
+
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    mainContent.style.display = 'none';
+    video.style.display = 'block';
+    video.muted = false;
+    video.currentTime = 0;
+    video.play();
+
+    closeBtn.style.display = 'none';
+    setTimeout(() => {
+      closeBtn.style.display = 'block';
+    }, 5000);
+  }); 
+
+  closeBtn.addEventListener('click', () => {
+    video.pause();
+    video.currentTime = 0;
+    video.style.display = 'none';
+    closeBtn.style.display = 'none';
+    mainContent.style.display = 'block';
+  });
+</script>
+
+
+</body>
+</html>
